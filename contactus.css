@@ -1,0 +1,310 @@
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #00bcd4;
+}
+body
+{
+  overflow-x: hidden;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+@media (min-width: 768px)
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+@media (min-width: 768px)
+.offset-md-2 {
+    margin-left: 16.666667%;
+}
+@media (min-width: 768px)
+.col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.banner {
+   
+    background-size: 100% 100%;
+    padding: 300px 0px;
+    background-position: center center;
+   
+    width: 100%;
+    height: 100vh;
+   
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    background-image: linear-gradient(rgba(4,168,255,0.3), rgba(0,168,255,0.3)), url('blue-wallpaper.jpg');
+position: relative;
+
+}
+.banner .caption h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+}
+form {
+    display: block;
+
+    margin-top: 0em;
+}
+@media (min-width: 768px)
+.col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.form-control {
+    display: block;
+width: 80%;
+margin-left: 40px;
+    margin-top: 0em;
+
+    background-color: transparent;
+
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+
+::placeholder
+{
+	font-size: 12px;
+color:#6a6a6a;
+height: 45px;
+    padding-top: 3px;
+    padding-left: 15px;
+
+}
+
+
+
+
+
+@media (min-width: 768px)
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+@media (min-width: 768px)
+.offset-md-2 {
+    margin-left: 16.666667%;
+}
+@media (min-width: 768px)
+.col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+.division{
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+    margin: 35px 0px 30px 0px;
+}
+
+
+footer {
+
+    background-image: url(PYd99.jpg);
+    padding: 50px 0px 50px 0px;
+    color: white;
+    font-size: 11px;
+
+}
+@media (max-width: 767px)
+.footer-item {
+    margin-bottom: 60px;
+}
+.form input, .form textarea {
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #6a6a6a;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 60%;
+    height: 30px;
+ 
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+    margin-bottom: 30px;
+}
+.form textarea {
+  height: auto;
+    resize: none;
+    padding: 10px;
+}
+.form button {
+    cursor: pointer;
+ 
+    height: 50px;
+   
+    padding: 0px 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left: 30px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+}
+
+h6
+{
+ color: #EFFBFB;
+ font-size: 25px;
+ font: bold;
+}
+h5
+{
+ color: #EFFBFB;
+ font-size: 15px;
+ font: bold;
+}
+h2
+{
+ color: #1e1e1e;
+ font-size: 13px;
+}
+.h7
+{
+ color: #1e1e1e;
+ font-size: 13px;
+}
+p
+{
+    color: #00bcd4;
+    font-size: 18px
+}
+html
+{
+    overflow-x: hidden; 
+}
+i
+{
+  color: #00bcd4;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 10px;
+
+ }
+#map {
+    margin-top: 50px;
+    margin-bottom: -147px;
+}
+#loading
+{
+    width: 100%;
+    height: 100vh;
+    background: #fff 
+    url('/home/cedcoss/Desktop/hostcloud/tenor1.gif') no-repeat center;
+    position: fixed;
+    z-index: 999999;
+}
